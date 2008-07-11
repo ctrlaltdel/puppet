@@ -1,0 +1,2 @@
+command="rsync --server -vlogDtprCz . /",no-pty,no-port-forwarding,no-X11-forwarding ssh-dss AAAAB Backup
+no-pty,no-port-forwarding,command="rsync --server -vlogDtprCz . /",no-pty,no-port-forwarding,no-X11-forwarding ssh-dss AAAAB Backup
