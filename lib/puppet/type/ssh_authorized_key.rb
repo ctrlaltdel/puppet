@@ -1,6 +1,6 @@
 module Puppet
     newtype(:ssh_authorized_key) do
-        @doc = "Manages SSH authorized keys. Currently only type 2 are
+        @doc = "Manages SSH authorized keys. Currently only type 2 keys are
         supported."
 
         ensurable
