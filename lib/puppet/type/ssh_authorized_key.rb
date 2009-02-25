@@ -27,6 +27,11 @@ module Puppet
 
         newproperty(:user) do
             desc "The user account in which the SSH key should be installed."
+
+            def value=(value)
+                @resource[:target] = File.expand_path("~%s/.ssh/authorized_keys" % value)
+                super
+            end
         end
 
         newproperty(:target) do
