@@ -1,4 +1,8 @@
 0.24.8
+    Fixed #2004 - ssh_authorized_key fails if no target is defined
+
+    Fixed #1629 - incorrect permissions on ssh_authorized_keys created files
+
     Fixed #2000 - No default specified for checksum
 
     Fixed #2026 - Red Hat ignoring stop method
