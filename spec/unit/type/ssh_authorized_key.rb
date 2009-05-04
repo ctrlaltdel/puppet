@@ -122,6 +122,15 @@ describe ssh_authorized_key do
         end
     end
 
+    describe "when calling validate" do
+        it "should not crash on a non-existant user" do
+            resource = @class.create(
+                :name   => "Test",
+                :user   => "root")
+            proc { resource.validate }.should_not raise_error
+        end
+    end
+
     after do
       @class.clear
       @catalog.clear
